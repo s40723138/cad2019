@@ -13,51 +13,29 @@
 <p><a href="https://github.com/mdecourse/cmsimde">https://github.com/mdecourse/cmsimde</a> 的開發, 可以在一個目錄中放入 cmsimde, 然後將 up_dir 中的內容放到與 cmsimde 目錄同位階的地方, 使用 command 進入 cmsimde 目錄, 執行 python wsgi.py, 就可以啟動, 以瀏覽器 https://localhost:9443 就可以連接, 以 admin 作為管理者密碼, 就可以登入維護內容.</p>
 <p>cmsimde 的開發採用 Leo Editor, 開啟 cmsimde 目錄中的 cmsimde.leo 就可以進行程式修改, 結束後, 若要保留網際內容, 只要將 cmsimde 外部的內容倒回 up_dir 目錄中即可後續對 cmsimde 遠端倉儲進行改版.</p>
 <p>init.py 位於  up_dir 目錄, 可以設定 site_title 與 uwsgi 等變數.</p>
-<h1>IPv6_ssh</h1>
+<h1>TASKS</h1>
+<p>簡單的任務回報</p>
+<h2>IPv6_ssh</h2>
 <p>1.先使用命令方塊輸入sh</p>
 <p>2.再輸入<span>ssh-keygen -t rsa -b 4096 -C "(鑰匙名稱)" 來產生鑰匙</span></p>
 <p><span>3.開啟puttygen將剛剛所產生的private key轉為PPK檔</span></p>
 <p><span>4.在start.bat中加入下方程式,設定路徑使start.bat連結plink.exe</span></p>
-<div class="line number1 index0 alt2">
-<table border="0" cellpadding="0" cellspacing="0">
-<tbody>
-<tr>
-<td class="gutter">
-<div class="line number1 index0 alt2">1</div>
-<div class="line number2 index1 alt1">2</div>
-<div class="line number3 index2 alt2">3</div>
-</td>
-<td class="code">
-<div class="container">
-<div class="line number1 index0 alt2"><code class="py plain">REM </code><code class="py keyword">for</code> <code class="py plain">putty</code></div>
-<div class="line number2 index1 alt1"><code class="py functions">set</code> <code class="py plain">GIT_HOME</code><code class="py keyword">=</code><code class="py keyword">%</code><code class="py plain">Disk</code><code class="py keyword">%</code><code class="py plain">:\portablegit\</code><code class="py functions">bin</code><code class="py plain">\</code></div>
-<div class="line number3 index2 alt2"><code class="py functions">set</code> <code class="py plain">GIT_SSH</code><code class="py keyword">=</code><code class="py keyword">%</code><code class="py plain">Disk</code><code class="py keyword">%</code><code class="py plain">:\putty\plink.exe</code></div>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
+<div class="line number1 index0 alt2"><code class="py plain">REM<span> </span></code><code class="py keyword">for</code><span> </span><code class="py plain">putty</code></div>
+<div class="line number2 index1 alt1"><code class="py functions">set</code><span> </span><code class="py plain">GIT_HOME</code><code class="py keyword">=</code><code class="py keyword">%</code><code class="py plain">Disk</code><code class="py keyword">%</code><code class="py plain">:\portablegit\</code><code class="py functions">bin</code><code class="py plain">\</code></div>
+<div class="line number3 index2 alt2"><code class="py functions">set</code><span> </span><code class="py plain">GIT_SSH</code><code class="py keyword">=</code><code class="py keyword">%</code><code class="py plain">Disk</code><code class="py keyword">%</code><code class="py plain">:\putty\plink.exe</code></div>
+<div class="line number1 index0 alt2"></div>
 <div class="line number3 index2 alt2">
 <p>5.將.git/config中的URL改為SSH所用</p>
+<p><span>url= git@github.com:(username)/(repository).git</span></p>
 <div>
 <div class="syntaxhighlighter html" id="highlighter_298462">
-<table border="0" cellpadding="0" cellspacing="0">
-<tbody>
-<tr>
-<td class="gutter">
-<div class="line number1 index0 alt2">1</div>
-</td>
-<td class="code">
-<div class="container">
-<div class="line number1 index0 alt2"><code class="html plain">url= git@github.com:(username)/(repository).git</code></div>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
 <p>6.使用<span>putty.exe設定proxy改成HTTP並將SSH的Auth將剛剛所轉好的private key載入</span></p>
 <p><span>7.到github倉儲sitting中SSH新增剛剛的public key</span></p>
+<h2>W17 Exan</h2>
+<p>影片:<a href="https://youtu.be/M5Xo2ARTumg">https://youtu.be/M5Xo2ARTumg</a></p>
+<p>分組倉儲:<a href="https://s40723145.github.io/cad2019ag2/content/40723138.html">https://s40723145.github.io/cad2019ag2/content/40723138.html</a></p>
+<p>遇到問題:組員同時間推送版本,組長需花費較多時間整理衝突,組員會多次推送檔案,使倉儲版本差距增加.</p>
+<p>第二題:連趕關節觸感為極限開關,變為類似避震器.</p>
 </div>
 </div>
 </div>
