@@ -39,7 +39,7 @@
 ### KMOLab
 
 &lt;small&gt;
-Created by [KMOLab](http://lab.kmol.info/)
+期末報告
 &lt;/small&gt;
 
 [CMSimfly 網誌](./../blog/index.html)
@@ -55,17 +55,11 @@ Created by [KMOLab](http://lab.kmol.info/)
 
 						
 </t>
-<t tx="leo.20180902120523.12"># 各周事項
+<t tx="leo.20180902120523.12"># 所做事項
 
-* W1    課程介紹
-* W2  GITHUB複習
-* W3  編譯 Solvespace
-* W4 利用Solvespace繪圖
-* W5 更改Solvespace原始碼
-* W6 利用V-rep控制模型
-* W7 Solvespace 編譯與繪圖驗證
-* W8 以ssh連接Github與開啟網頁blog
-
+* Solvespace 編譯與繪圖驗證
+* V-rep模擬
+* SSH導入
 </t>
 <t tx="leo.20180902120523.2"></t>
 <t tx="leo.20180902120523.3">@language xml
@@ -81,7 +75,7 @@ Created by [KMOLab](http://lab.kmol.info/)
 <t tx="leo.20180902120523.5">&lt;head&gt;
     &lt;meta charset="utf-8"&gt;
 &lt;title&gt;
-CMSimfly 網際內容管理 (期中報告)
+CMSimfly 網際內容管理 (期末報告)
 &lt;/title&gt;
     &lt;meta name="description" content="A framework for easily creating beautiful presentations using HTML"&gt;
     &lt;meta name="author" content="Hakim El Hattab"&gt;
